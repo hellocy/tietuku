@@ -27,8 +27,8 @@
 		fd.append(this.name, files[0]);
 
 		var reader = new FileReader();
-        reader.readAsDataURL(files[0]);
-        reader.onload = function (e) {
+		reader.readAsDataURL(files[0]);
+        	reader.onload = function (e) {
         	$("#local-img").attr("src", this.result);
         }
 
