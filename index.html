@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>贴图库上传API演示</title>
+	<link rel="stylesheet" href="js/jquery.upload/jquery.upload.css">
+</head>
+
+
+<body>
+	<div class="main">		
+		<div class="upload-box">
+			<input type="file" multiple="multiple" id="file" name="file">
+			<span class="icon-plus">+</span>
+			<span class="upload-txt">选择本地图片</span>
+		</div>
+
+		<div class="upload-preview-box">
+			<div class="preview-box-body">
+				<img src="" id="local-img" alt="">
+			</div>
+			<div class="progress-wraper">
+				<div class="preview-box-footer">
+					<div class="progress-box">
+						<div class="progress-bar" style="width: 0%;" data-value="0">
+	                        <span class="percent">0%</span>
+	                    </div>
+					</div>
+					<button class="start">开始上传</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="show">
+			<p>原图外链：<span id="linkurl"></span></p>
+			<p>展示图外链：<span id="s_url"></span></p>
+			<p>缩略图外链：<span id="t_url"></span></p>
+			<p>UBB代码：<span id="ubburl"></span></p>
+			<p>MarkDown：<span id="markdown"></span></p>
+		</div>
+	</div>
+	
+	
+	<!--图片上传成功后显示-->
+	<div id="img-box">
+		<center>
+			<a href="" id="img-url" target="_blank" title="点此查看原图" rel="nofollow">
+				<img src="" id="show_img" width="" height="" />
+			</a>
+		</center>
+	</div>
+	
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery.form.js"></script>
+	<script src="./js/embed.js"></script>
+	<script src="./js/layer/layer.js"></script>
+	<script src="./js/jquery.upload/jquery.upload.js"></script>
+	<script>
+		//$("#uploadBtn").upload({
+			// url: "http://up.imgapi.com/",
+	  //       param: {
+		 //        from: "file",
+		 //        httptype: "1",
+		 //        Token: "797f6ce491baa29c295b31b4cde4bf796fda229e:eN_OGRjI_beIRSNvC9fnsZXqgSQ=:eyJkZWFkbGluZSI6MTQ5NDM5NzQ1MSwiYWN0aW9uIjoiZ2V0IiwidWlkIjoiNjk5NiIsImFpZCI6IjE1NzM3IiwiZnJvbSI6ImZpbGUifQ=="
+	  //       },
+	  //       fileType: "img",
+	  //       isMultiple: false,
+	  //       success: function(e){
+	  //       	for(var i in e){
+	  //       		$("#show #" + i).val(e[i]);
+	  //       	}
+	            
+	  //       }
+		//});
+	</script>
+</body>
+</html>
