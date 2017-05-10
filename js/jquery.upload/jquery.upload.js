@@ -18,7 +18,7 @@
 		var fl = Math.min(files.length, MAXFILENUMBER);
 
 		fd.append("from", "file");
-		fd.append("httptype", "1");
+		fd.append("httptype", "2");
 		fd.append("Token", "797f6ce491baa29c295b31b4cde4bf796fda229e:eN_OGRjI_beIRSNvC9fnsZXqgSQ=:eyJkZWFkbGluZSI6MTQ5NDM5NzQ1MSwiYWN0aW9uIjoiZ2V0IiwidWlkIjoiNjk5NiIsImFpZCI6IjE1NzM3IiwiZnJvbSI6ImZpbGUifQ==");
 		
 		var fileName = files[0].name;
