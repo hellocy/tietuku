@@ -5,12 +5,12 @@
 (function(){
 
 	var fd = new FormData();// html5新增的对象,可以包装字符,二进制信息
-	var $ELEMENT = null;
+	var $ELEMENT = $("#file");
 	var xhr = new XMLHttpRequest();
 	var response = null;
 	var MAXFILENUMBER = 5;
 
-	$("#file").change(function(){
+	$ELEMENT.change(function(){
 		
 		var files = this.files;
 		var html = '';
@@ -58,7 +58,7 @@
 			}
 		};
 		xhr.onload = function(e){
-			//$ELEMENT.val(null);
+			$ELEMENT.val(null);
 			response = JSON.parse(e.target.response);
 			layer.msg("上传成功！");
 			$(".preview-box-footer").fadeOut("slow", function(){
@@ -71,7 +71,7 @@
 		}
 
 		xhr.onerror = function(e){
-			//$ELEMENT.val(null);
+			$ELEMENT.val(null);
 			layer.msg("上传错误！", {icon: 2}, function(){
 				layer.closeAll();
 			});
