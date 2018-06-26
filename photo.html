@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>图片展示</title>
+	<style>
+		body{
+			background:#000;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="main">
+		<audio id="back-music-player" src="../media/music/memory.mp3" style="display: none;" loop="true"></audio>
+	</div>
+	
+	<script src="./js/jquery.min.js"></script>
+	<script src="../js/layer/layer.js"></script>
+	<script>
+		$(function(){
+			var audio = document.getElementById('back-music-player');
+			setTimeout(function(){
+				audio.play();
+			}, 2000);
+		})
+	</script>
+</body>
+</html>
